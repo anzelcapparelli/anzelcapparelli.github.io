@@ -41,7 +41,7 @@ In summation, this template demonstrates how Bootstrap is not only quick and con
 
 ### Deployed Link
 
-[Marketing Template Deployed Page](https://anzelcapparelli.github.io/).
+[Bootstrap Deployed Page](https://anzelcapparelli.github.io/).
 
 
 [GitHub Repository Link](https://github.com/anzelcapparelli/anzelcapparelli.github.io)
