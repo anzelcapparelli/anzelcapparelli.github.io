@@ -1,0 +1,12 @@
+
+.half-size{
+    font-size: 0.75em;
+}
+
+.githubIcon {
+    background: url('../assets/images/GitHub-Mark-32px.png');
+    height: 32px;
+    width: 32px;
+    display: block;
+    /* Other styles here */
+}
