@@ -64,6 +64,10 @@ width:0
     transition: 2s;
 }
 
+.parentFade .fade{
+    transition: 2s;
+}
+
 .parentFade:hover .preferName{
 display: none;
 }
