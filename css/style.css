@@ -11,3 +11,56 @@
     /* Other styles here */
 }
 
+.fullName{
+    display: none;
+}
+
+@keyframes fader {
+    from {opacity: 1; width:90px;}
+    to {opacity: 0; width: 0;}
+}
+
+@keyframes revealer {
+    from {opacity: 0; width:0;}
+    to {opacity: 1; width: 90px;}
+}
+
+.fade{
+display: inline-block;
+animation-name: fader;
+animation-duration: 2s;
+width:0
+}
+
+
+.parentFade{
+    padding: 40px;
+}
+
+.parentFade:hover .fade{
+    opacity: 1;
+    width:90px;
+    transition: 2s;
+}
+
+.parentFade:hover .preferName{
+display: none;
+}
+
+.parentFade:hover .fullName{
+display: block;
+}
+
+.shifter::selection .fade{
+    opacity: 1;
+    width: 90px
+}
+
+
+/* 
+- not sure if can keep opaque with just css (doesn't look like it- probs need JS
+- also need to figure out transformations (will help with
+
+
+probably because of span
+*/
