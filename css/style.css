@@ -51,7 +51,7 @@ width:0
 
 
 .parentFade{
-    padding: 40px;
+    border: 40px;
 }
 
 .parentFade:hover .fade{
