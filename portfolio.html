@@ -24,45 +24,42 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-        <!-- keeping name in navbar on the left -->
         <header class="mr-auto">
             <a class="navbar-brand" href="#">
                 <h1>Anzel Capparelli</h1>
             </a>
         </header>
 
-        <!-- Keeps links on right of navbar -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-        <div>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarScroll">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll nav-pills" style="max-height: 100px;">
 
+                <li class="nav-item">
+                    <!-- <a class="nav-link active" href="./index.html">About</a> -->
+                    <a class="nav-link text-warning" href="./index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="./portfolio.html">Portfolio</a> -->
+                    <a class="nav-link text-success active" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="./contact.html">Contact</a>
+                </li>
 
-            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-                <ul class="nav nav-pills ">
-                    <li class="nav-item">
-                        <!-- <a class="nav-link active" href="./index.html">About</a> -->
-                        <a class="btn btn-outline-warning text-warning" href="./index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="./portfolio.html">Portfolio</a> -->
-                        <a class="btn btn-outline-success active" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-info text-info" href="./contact.html">Contact</a>
-                    </li>
+            </ul>
 
-                </ul>
-            </div>
         </div>
     </nav>
+
     <!--end of navbar-->
 
-    <div class="p-3 mb-2 bg-secondary text-white portfolioBackground sel_background portfolio">
+    <div class="p-3 mb-2 bg-secondary text-light portfolioBackground sel_background portfolio">
 
 
         <!-- try incorporating flexbox! -->
