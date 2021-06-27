@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/cardBackgrounds.css">
+    <link rel="stylesheet" href="./css/bootstrapModal.css">
+    <link rel="stylesheet" href="./css/modal.css">
 
 
     <title>Portfolio</title>
@@ -61,6 +63,9 @@
 
     <!--end of navbar-->
 
+    <!-- Button trigger modal -->
+    </div>
+
     <div class="p-3 mb-2 bg-secondary text-light portfolioBackground sel_background portfolio">
 
 
@@ -69,7 +74,7 @@
 
             <div class="card">
                 <h4>Marvel Hero-Finder</h4>
-                <img src="./assets/images/marvel.jpg" class="img-fluid" alt="project 1">
+                <img src="./assets/images/marvel.jpg" class="img-fluid" id="projectPic" alt="project 1">
                 <div class="links">
                     <span> <a href="https://anzelcapparelli.github.io/marvelHeroFinder/" target="_blank">Deployed
                             Site</a>
@@ -77,6 +82,23 @@
                         <a href="https://github.com/anzelcapparelli/marvelHeroFinder/" target="_blank">GitHub Repo</a>
                     </span>
                 </div>
+
+
+
+
+            </div>
+
+            <!-- modal is triggered by clicking the project picture -->
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Marvel Hero-Finder</p>
+                </div>
+
             </div>
 
             <div class="card">
@@ -125,6 +147,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="./css/modal.css">
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+
 
 </body>
 
