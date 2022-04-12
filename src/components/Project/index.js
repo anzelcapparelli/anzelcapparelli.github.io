@@ -6,7 +6,7 @@ function Project(props) {
 
     return (
         <div className="card">
-            <h4>{props.name}</h4>
+            <h4 className="text-light">{props.name}</h4>
             <img src={props.imgSrc} className="img-fluid" alt={props.name} />
             <div className="links">
                 <span> <a href={props.deployedHref} rel="noreferrer" target="_blank">Deployed

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../style.css";
 
 // for neater look, make a variable containing desired styles, then set styles to vars
 
@@ -11,10 +11,13 @@ const aboutBackground={
   backgroundSize: 'cover',
 }
 
+// background-color: rgba(30,30,30, .7);
+// ^^^ this looks like the magic sauce...
+
   return (
 <div style={aboutBackground}>
   {/* ^^^ add image to above div! */}
-  <div style={{backgroundColor:'red'}} className="container p-3 mb-2 text-dark">
+  <div className="container p-3 mb-2 text-light transparent">
     {/* above div is the background to the text! Bootstrap is overriding */}
     <div className="row justify-content-start">
       <div className="col-md-12 mt-5">

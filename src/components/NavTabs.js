@@ -9,8 +9,6 @@ function NavTabs() {
         <h1>Anzel Capparelli</h1>
       </NavLink>
 
-
-
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <NavLink exact to="/" className="nav-button btn btn-outline-warning text-warning" activeClassName="active">

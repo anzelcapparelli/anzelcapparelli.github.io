@@ -1,6 +1,6 @@
 import React from "react";
 import "module";
-import "./style.css";
+import "../style.css";
 
 function Contact() {
 
@@ -21,7 +21,7 @@ function Contact() {
     </div>
   </div>
   <div className="row mb-5 mt-5 justify-content-center contactInfo">
-    <div className="col-5 justify-content-center" style={{backgroundColor:'red'}}>
+    <div className="col-5 justify-content-center text-light transparent">
       <div className="parentFade">
         <h3 className="mb-0"><span className="fade">Edward</span><span className="shifter"> Anzel Capparelli</span>
         </h3>
