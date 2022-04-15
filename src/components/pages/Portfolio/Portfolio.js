@@ -51,7 +51,6 @@ function Portfolio() {
   ]
 
   const portfolioBackground={
-    backgroundColor: 'rgb(30,30,30)',
     backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/rockhall.jpg"})`,
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover'
