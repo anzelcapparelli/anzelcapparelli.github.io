@@ -1,10 +1,10 @@
 import { HashRouter as Router, Route } from "react-router-dom";
-import NavTabs from "./components/NavTabs";
-import About from "./components/pages/About/About";
-import Contact from "./components/pages/Contact/Contact";
-import Portfolio from "./components/pages/Portfolio/Portfolio";
+import NavTabs from "./components/NavTabs/NavTabs";
+import About from "./components/Pages/About/About";
+import Contact from "./components/Pages/Contact/Contact";
+import Portfolio from "./components/Pages/Portfolio/Portfolio";
 import Header from "./components/Header/";
-import Footer from "./components/Footer.js";
+import Footer from "./components/Footer/Footer.js";
 
 import './App.css';
 

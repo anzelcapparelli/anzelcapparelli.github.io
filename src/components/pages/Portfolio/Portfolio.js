@@ -58,7 +58,7 @@ function Portfolio() {
 
   return (
     <div style={portfolioBackground}>
-      <h1>Portfolio Page</h1>
+      <h1 style={{color:'white'}}>Portfolio Page</h1>
 
 {projectsArr.map(projArrRow => 
       <Project {...projArrRow} key={projArrRow.name} />

@@ -15,7 +15,7 @@ function Contact() {
   <div className="row justify-content-center">
     <div className="col ml-2">
       <header>
-        <h1>Contact information</h1>
+        <h1 style={{color:'white'}}>Contact information</h1>
       </header>
       <hr />
     </div>
