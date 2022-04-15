@@ -51,7 +51,7 @@ function Portfolio() {
   ]
 
   const portfolioBackground={
-    backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/rockhall.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/rockHall.jpg"})`,
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover'
   }
