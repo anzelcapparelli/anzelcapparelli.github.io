@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../../Project";
-import "./style.css";
+import "../style.css";
 
 function Portfolio() {
 
@@ -51,7 +51,7 @@ function Portfolio() {
   ]
 
   const portfolioBackground={
-    backgroundColor: 'rgb(0,0,0)',
+    backgroundColor: 'rgb(30,30,30)',
     backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/rockhall.jpg"})`,
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover'

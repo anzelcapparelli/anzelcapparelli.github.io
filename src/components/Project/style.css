@@ -5,6 +5,7 @@ img{
 
 .card{
     width:40%;
+    background-color: #303030!important;
     display: inline-flex!important;
     margin: 2%;
 }
