@@ -11,7 +11,7 @@ function NavTabs() {
 
         <ul className="nav nav-tabs">
           <li className="nav-item">
-            <NavLink exact to="/" className="nav-button btn btn-outline-warning text-warning" activeClassName="active">
+            <NavLink exact to="/" className="nav-button btn btn-outline-warning text-warning" activeClassName="active" style={{marginRight:'3px'}}>
               About
         </NavLink>
           </li>
@@ -21,12 +21,12 @@ function NavTabs() {
         </NavLink>
       </li> */}
           <li className="nav-item">
-            <NavLink exact to="/portfolio" className="nav-button btn btn-outline-success text-success" activeClassName="active">
+            <NavLink exact to="/portfolio" className="nav-button btn btn-outline-success text-success" activeClassName="active" style={{marginRight:'3px'}}>
               Portfolio
         </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/contact" className="nav-button btn btn-outline-info text-info" activeClassName="active">
+            <NavLink exact to="/contact" className="nav-button btn btn-outline-info text-info" activeClassName="active" style={{marginRight:'3px'}}>
               Contact
         </NavLink>
           </li>

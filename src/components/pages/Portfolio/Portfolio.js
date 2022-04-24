@@ -51,15 +51,14 @@ function Portfolio() {
   ]
 
   const portfolioBackground={
-    backgroundColor: 'rgb(30,30,30)',
-    backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/rockhall.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/rockHall.jpg"})`,
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover'
   }
 
   return (
     <div style={portfolioBackground}>
-      <h1>Portfolio Page</h1>
+      <h1 style={{color:'white'}}>Portfolio Page</h1>
 
 {projectsArr.map(projArrRow => 
       <Project {...projArrRow} key={projArrRow.name} />
