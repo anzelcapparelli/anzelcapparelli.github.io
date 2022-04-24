@@ -9,10 +9,10 @@ function Project(props) {
             <h4 className="text-light">{props.name}</h4>
             <img src={props.imgSrc} className="img-fluid" alt={props.name} />
             <div className="links">
-                <span> <a href={props.deployedHref} rel="noreferrer" target="_blank">Deployed
-        Site</a>
-      |
-      <a href={props.githubHref} rel="noreferrer" target="_blank">GitHub Repo</a>
+                <span>
+                    <a href={props.deployedHref} rel="noreferrer" target="_blank">Deployed Site</a>
+                    <span> | </span>
+                    <a href={props.githubHref} rel="noreferrer" target="_blank">GitHub Repo</a>
                 </span>
             </div>
         </div>

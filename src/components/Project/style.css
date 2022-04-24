@@ -4,7 +4,10 @@ img{
 }
 
 .card{
+    border-color: red;
+    border: solid 1px;
     width:40%;
+    height: 45%;
     background-color: #303030!important;
     display: inline-flex!important;
     margin: 2%;
