@@ -3,3 +3,7 @@
     background-attachment: fixed;
     background-size: cover;
 } */
+
+.wrapThis {
+    overflow-wrap: break-word !important;
+}

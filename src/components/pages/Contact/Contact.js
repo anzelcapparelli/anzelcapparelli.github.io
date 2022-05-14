@@ -1,5 +1,6 @@
 import React from "react";
 import "module";
+import "./style.css";
 import "../style.css";
 
 function Contact() {
@@ -28,7 +29,7 @@ function Contact() {
         <p className="half-size preferName">Preferred Name</p>
         <p className="half-size fullName">Full Name</p>
       </div>
-      <div><strong>Email: </strong><a href="mailto:anzelcapparelli@gmail.com">anzelcapparelli@gmail.com</a></div>
+      <div className="wrapThis"><strong>Email: </strong><a href="mailto:anzelcapparelli@gmail.com" className="wrapThis">anzelcapparelli@gmail.com</a></div>
       <div><strong>Phone (text or call): </strong><a href="tel:6199521941">(619) 952-1941</a></div>
       <div className="pb-5"><strong>Resume (PDF): </strong><a href={process.env.PUBLIC_URL + "/assets/images/resume22Feb2021.pdf"} rel="noreferrer" target="_blank">updated Feb 22, 2021</a>
       </div>
