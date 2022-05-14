@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import "../style.css";
 
 // for neater look, make a variable containing desired styles, then set styles to vars
@@ -10,9 +11,6 @@ function About() {
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover',
   }
-
-  // background-color: rgba(30,30,30, .7);
-  // ^^^ this looks like the magic sauce...
 
   return (
     <div style={aboutBackground}>
