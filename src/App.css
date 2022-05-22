@@ -7,3 +7,7 @@
   pointer-events: none;
 }
 
+.pageBackground{
+  background-attachment: fixed;
+  background-size: 'cover';
+}

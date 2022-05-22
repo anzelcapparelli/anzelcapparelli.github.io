@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../../Project";
-import "../style.css";
+import "../../transparent.css";
 
 function Portfolio() {
 
@@ -79,16 +79,8 @@ function Portfolio() {
     // },
   ]
 
-  
-  const portfolioBackground = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/rockHall.jpg"})`,
-    backgroundAttachment: 'fixed',
-    backgroundSize: 'cover'
-  }
-
   return (
-    <div style={portfolioBackground}>
-      <h1 style={{ color: 'white' }}>Portfolio Page</h1>
+    <div>
 
       {projectsArr.map(projArrRow =>
         <Project {...projArrRow} key={projArrRow.name} />

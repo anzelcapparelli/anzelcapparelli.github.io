@@ -1,14 +1,24 @@
 import { HashRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs/NavTabs";
-import About from "./components/Pages/About/About";
-import Contact from "./components/Pages/Contact/Contact";
-import Portfolio from "./components/Pages/Portfolio/Portfolio";
+import About from "./components/Pages/About";
+import Contact from "./components/Pages/Contact";
+import Portfolio from "./components/Pages/Portfolio";
 import Header from "./components/Header/";
-import Footer from "./components/Footer/Footer.js";
+import Footer from "./components/Footer/";
+import PageTitle from "./components/PageTitle";
 
 import './App.css';
 
 function App() {
+
+  const bckgrnd = {
+    about: "/assets/images/angelTop.jpg",
+    portfolio: "/assets/images/rockHall.jpg",
+    contact: "/assets/images/pockmark.jpg"
+  }
+
+  // backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/rockHall.jpg"})`,
+
   return (
     <Router>
       <div>
@@ -17,19 +27,30 @@ function App() {
         </Header>
         <div className="bg-white">
           <Route exact path={["/", "/about"]}>
+            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.about})`}}>
+            <PageTitle name="About Me" />
             <About />
+            </div>
+
           </Route>
           <Route exact path="/portfolio">
+            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.about})`}}>
+            <PageTitle name="Portfolio Page" />
             <Portfolio />
+            </div>
+
           </Route>
-          <Route path="/contact">
+          <Route exact path="/contact">
+            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.about})`}}>
+            <PageTitle name="Contact Information" />
             <Contact />
+            </div>
+
           </Route>
         </div>
       </div>
 
       <Footer />
-      {/* <img src="assets/images/marvel.jpg" alt="marvel" /> */}
 
     </Router>
   );
@@ -40,7 +61,5 @@ export default App;
 // Updated portfolio featuring 6 total projects
 
 // Update GitHub profile with pinned repositories featuring those same projects
-
-// Deploy this site to GitHub Pages using the Create React App docs for deployment.
 
 // Important: Be sure to push your codebase to GitHub and NOT your built and deployed code. Ensure this happens by following the above instructions and using the gh-pages branch to host the deployed application's code.

@@ -1,22 +1,13 @@
 import React from "react";
 import "module";
-import "../style.css";
+import "../../transparent.css";
 
 function Contact() {
 
-  const contactBackground={
-    backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/images/pockmark.jpg"})`,
-    backgroundAttachment: 'fixed',
-    backgroundSize: 'cover',
-  }
-
   return (
-<div style={contactBackground}>
+<div>
   <div className="row justify-content-center">
     <div className="col ml-2">
-      <header>
-        <h1 style={{color:'white'}}>Contact information</h1>
-      </header>
       <hr />
     </div>
   </div>

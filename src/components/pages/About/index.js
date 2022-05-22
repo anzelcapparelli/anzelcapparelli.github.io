@@ -1,29 +1,18 @@
 import React from "react";
-import "../style.css";
+import "../../transparent.css";
 
 // for neater look, make a variable containing desired styles, then set styles to vars
 
 function About() {
 
-  const aboutBackground = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/angelTop.jpg"})`,
-    backgroundAttachment: 'fixed',
-    backgroundSize: 'cover',
-  }
-
-  // background-color: rgba(30,30,30, .7);
-  // ^^^ this looks like the magic sauce...
-
   return (
-    <div style={aboutBackground}>
+
+    <div >
       {/* ^^^ add image to above div! */}
       <div className="container p-3 mb-2 text-light transparent">
         {/* above div is the background to the text! Bootstrap is overriding */}
         <div className="row justify-content-start">
           <div className="col-md-12 mt-5">
-            <header>
-              <h1>About Me</h1>
-            </header>
             <hr />
           </div>
         </div>
