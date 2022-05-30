@@ -15,6 +15,7 @@ function Project(props) {
             <div>
                 <h4 className="text-light">{props.name}</h4>
                 <img src={props.imgSrc} className="img-fluid" alt={props.name} onClick={handleShow} />
+                {/* change to an 'if' statement, or a ternary operator based on bool handleShow! Way to steer away from */}
                 <div className="links justify-content-md-center text-center ">
                     <span>
                         <a href={props.deployedHref} rel="noreferrer" target="_blank">Deployed Site</a>
