@@ -12,12 +12,11 @@ import './App.css';
 function App() {
 
   const bckgrnd = {
-    about: "/assets/images/angelTop.jpg",
-    portfolio: "/assets/images/rockHall.jpg",
-    contact: "/assets/images/pockmark.jpg"
+    // about: "/assets/images/backgrounds/angelTop.jpg",
+    // portfolio: "/assets/images/backgrounds/rockHall.jpg",
+    // contact: "/assets/images/backgrounds/pockmark.jpg",
+    universal: "/assets/images/backgrounds/forest_n_creek.jpg",
   }
-
-  // backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/rockHall.jpg"})`,
 
   return (
     <Router>
@@ -27,21 +26,21 @@ function App() {
         </Header>
         <div className="bg-white">
           <Route exact path={["/", "/about"]}>
-            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.about})`}}>
+            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
             <PageTitle name="About Me" />
             <About />
             </div>
 
           </Route>
           <Route exact path="/portfolio">
-            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.about})`}}>
+            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
             <PageTitle name="Portfolio Page" />
             <Portfolio />
             </div>
 
           </Route>
           <Route exact path="/contact">
-            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.about})`}}>
+            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
             <PageTitle name="Contact Information" />
             <Contact />
             </div>

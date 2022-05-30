@@ -5,12 +5,7 @@ import "../../transparent.css";
 function Contact() {
 
   return (
-<div>
-  <div className="row justify-content-center">
-    <div className="col ml-2">
-      <hr />
-    </div>
-  </div>
+<div className="container">
   <div className="row mb-5 mt-5 justify-content-center contactInfo">
     <div className="col-5 justify-content-center text-light transparent">
       <div className="parentFade">
