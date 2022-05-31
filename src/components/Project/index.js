@@ -9,13 +9,14 @@ function Project(props) {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    // const toggleShow = () => setShow(!show);
 
     return (
         <div className="card">
             <div>
                 <h4 className="text-light">{props.name}</h4>
                 <img src={props.imgSrc} className="img-fluid" alt={props.name} onClick={handleShow} />
-                {/* change to an 'if' statement, or a ternary operator based on bool handleShow! Way to steer away from */}
+                {/* change to an 'if' statement, or a ternary operator based on bool setShow! Way to steer away from */}
                 <div className="links justify-content-md-center text-center ">
                     <span>
                         <a href={props.deployedHref} rel="noreferrer" target="_blank">Deployed Site</a>
@@ -31,12 +32,22 @@ function Project(props) {
                 </Modal.Header>
                 <Modal.Body>
                     <ul>
-                    {props.desc.map(tidbit =>
-                        <li key={uuidv4()}>{tidbit}</li>
+                        {props.desc.map(tidbit =>
+                            <li key={uuidv4()}>{tidbit}</li>
                         )}
                     </ul>
                 </Modal.Body>
             </Modal>
+            <card className="text-light">
+                <body className="text-light">
+                    <ul>
+                        {props.desc.map(tidbit =>
+                            <li key={uuidv4()}>{tidbit}</li>
+                        )}
+                    </ul>
+                </body>
+            </card>
+
         </div>
 
     );
