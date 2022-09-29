@@ -12,7 +12,7 @@ function Project(props) {
     // const toggleShow = () => setShow(!show);
 
     return (
-        <div className="card">
+        <div className="card m-5">
             <div>
                 <h4 className="text-light">{props.name}</h4>
                 <img src={props.imgSrc} className="img-fluid" alt={props.name} onClick={handleShow} />

@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return (
         <footer
-            style={{ clear: "both", paddingTop: 0, paddingBottom: 30, textAlign: "center" }}
+            style={{ clear: "both", paddingTop: 30, paddingBottom: 30, textAlign: "center" }}
             className="footer bg-dark"
         >
 

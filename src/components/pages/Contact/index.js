@@ -6,7 +6,7 @@ function Contact() {
 
   return (
 <div className="container">
-  <div className="row mb-5 mt-5 justify-content-center contactInfo">
+  <div className="row my-5 justify-content-center contactInfo">
     <div className="col-5 justify-content-center text-light transparent">
       <div className="parentFade">
         <h3 className="mb-0"><span className="fade">Edward</span><span className="shifter"> Anzel Capparelli</span>

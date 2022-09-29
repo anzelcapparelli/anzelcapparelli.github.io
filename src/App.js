@@ -28,21 +28,21 @@ function App() {
           <Route exact path={["/", "/about"]}>
             <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
             <PageTitle name="About Me" />
-            <About />
+            <About className="pageContents"/>
             </div>
 
           </Route>
           <Route exact path="/portfolio">
             <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
             <PageTitle name="Portfolio Page" />
-            <Portfolio />
+            <Portfolio className="pageContents"/>
             </div>
 
           </Route>
           <Route exact path="/contact">
             <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
             <PageTitle name="Contact Information" />
-            <Contact />
+            <Contact className="pageContents"/>
             </div>
 
           </Route>

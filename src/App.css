@@ -9,5 +9,10 @@
 
 .pageBackground{
   background-attachment: fixed;
-  background-size: 'cover';
+  /* background-size: 'cover'; */
+  /* position: relative; */
 }
+
+/* .pageContents{
+  position: absolute;
+} */
