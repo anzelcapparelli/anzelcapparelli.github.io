@@ -9,10 +9,8 @@ function Contact() {
   <div className="row my-5 justify-content-center contactInfo">
     <div className="col-5 justify-content-center text-light transparent">
       <div className="parentFade">
-        <h3 className="mb-0"><span className="fade">Edward</span><span className="shifter"> Anzel Capparelli</span>
+        <h3 className="mb-0"><span> Anzel Capparelli</span>
         </h3>
-        <p className="half-size preferName">Preferred Name</p>
-        <p className="half-size fullName">Full Name</p>
       </div>
       <div className="wrapThis"><strong>Email: </strong><a href="mailto:anzelcapparelli@gmail.com" className="wrapThis">anzelcapparelli@gmail.com</a></div>
       <div><strong>Phone (text or call): </strong><a href="tel:6199521941">(619) 952-1941</a></div>
