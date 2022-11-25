@@ -7,6 +7,7 @@ function Portfolio() {
   const projectsArr = [
 
     {
+      order:1,
       name: "Marvel Hero-Finder",
       imgSrc: process.env.PUBLIC_URL + "/assets/images/marvel.jpg",
       deployedHref: "https://anzelcapparelli.github.io/marvelHeroFinder/",
@@ -19,6 +20,7 @@ function Portfolio() {
     },
 
     {
+      order:2,
       name: "The Brew Budz",
       imgSrc: process.env.PUBLIC_URL + "/assets/images/bb-landing.jpg",
       deployedHref: "https://thebrewbudz.herokuapp.com/landing",
@@ -31,6 +33,7 @@ function Portfolio() {
     },
 
     {
+      order:3,
       name: "Eat-Da-Burger!",
       imgSrc: process.env.PUBLIC_URL + "/assets/images/burgerLaunch.jpg",
       deployedHref: "https://immense-everglades-88150.herokuapp.com/",
@@ -43,6 +46,7 @@ function Portfolio() {
     },
 
     {
+      order:4,
       name: "Google Books",
       imgSrc: process.env.PUBLIC_URL + "/assets/images/googleBooks.jpg",
       deployedHref: "https://google-books379009.herokuapp.com/",
@@ -55,6 +59,7 @@ function Portfolio() {
     },
 
     // {
+      // order:5,
     //   name: ,
     //   imgSrc: ,
     //   deployedHref: ,
@@ -67,6 +72,7 @@ function Portfolio() {
     // },
 
     // {
+      // order:6,
     //   name: ,
     //   imgSrc: ,
     //   deployedHref: ,
