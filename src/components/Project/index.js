@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Modal, Button } from "react-bootstrap";
 import { v4 as uuidv4 } from 'uuid';
 
 function Project(props) {
@@ -11,15 +10,23 @@ function Project(props) {
     const handleShow = () => setShow(true);
     // const toggleShow = () => setShow(!show);
 
+
+
     return (
         <div className="card m-5">
-            <div className="container">
-                <h4 className="text-light">{props.name}</h4>
+            <div
+                className="container"
+            >
+                <h4 className="text-light projectTitle">{props.name}</h4>
 
-
-
-                {/* <img src={props.imgSrc} className={`img${props.order} img-fluid project-img`} alt={props.name} onClick={handleShow} /> */}
-                <img src={props.imgSrc} className={`img${props.order} project-img`} alt={props.name} onClick={handleShow} />
+                {/* <div className="container"> */}
+                <img
+                    src={props.imgSrc}
+                    className={`img${props.order} project-img`}
+                    alt={props.name}
+                    onClick={handleShow}
+                    style={{ opacity: show ? 0.5 : 1 }}
+                />
                 {/* change to an 'if' statement, or a ternary operator based on bool setShow! Way to steer away from */}
 
 
@@ -33,20 +40,22 @@ function Project(props) {
                 </div>
             </div>
 
-            <Modal show={show} onHide={handleClose} animation={false}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{props.name}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <ul>
-                        {props.desc.map(tidbit =>
-                            <li key={uuidv4()}>{tidbit}</li>
-                        )}
-                    </ul>
-                </Modal.Body>
-            </Modal>
-            <card className="text-light">
+
+            <card 
+            className="text-light projectDescription" 
+            show={show} 
+            style={{ opacity: show ? 1 : 0 }}
+            onClick={show? "":{handleShow}}
+            // ^^^ onClick not currently working as intended
+            >
                 <body className="text-light">
+                    <span
+                        className="descriptionClose"
+                        onClick={handleClose}
+                        style={show ? { cursor: "pointer" } : {}}
+                    >
+                        x
+                    </span>
                     <ul>
                         {props.desc.map(tidbit =>
                             <li key={uuidv4()}>{tidbit}</li>
@@ -56,6 +65,7 @@ function Project(props) {
             </card>
 
         </div>
+        // </div>
 
     );
 }

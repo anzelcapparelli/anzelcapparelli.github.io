@@ -1,30 +1,45 @@
-img{
-    margin: auto!important;
+img {
+    margin: auto !important;
 }
 
-.card{
+.card {
     width: 40% !important;
     /* width: 40vw !important; */
     /* height: 45vh !important; */
     height: 45% !important;
-    background-color: #303030!important;
-    display: inline-flex!important;
+    background-color: #303030 !important;
+    display: inline-flex !important;
 }
 
-.links{
+.links {
     display: block;
     margin: 5px auto;
 }
 
-.projects{
+.projects {
     margin-left: auto;
     margin-right: auto;
 }
 
-.project-img{
-    float:left;
+.project-img {
+    float: left;
     width: 100%;
-    height:50vh;
+    height: 50vh;
     object-fit: cover;
+    position: relative;
 }
 
+/* .projectTitle{
+    position: absolute;
+} */
+.descriptionClose {
+    /* float: right; */
+    /* margin-bottom: 5px; */
+}
+
+.projectDescription {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
