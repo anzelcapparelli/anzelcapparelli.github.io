@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./style.css"
 
 function NavTabs() {
   return (
@@ -9,9 +10,9 @@ function NavTabs() {
         <h1>Anzel Capparelli</h1>
       </NavLink>
 
-        <ul className="nav nav-tabs">
+        <ul className="nav nav-tabs my-3">
           <li className="nav-item">
-            <NavLink exact to="/" className="nav-button btn btn-outline-warning text-warning" activeClassName="active" style={{marginRight:'3px'}}>
+            <NavLink exact to="/" className="nav-button btn btn-outline-warning text-warning" activeClassName="active" >
               About
         </NavLink>
           </li>
@@ -21,12 +22,12 @@ function NavTabs() {
         </NavLink>
       </li> */}
           <li className="nav-item">
-            <NavLink exact to="/portfolio" className="nav-button btn btn-outline-success text-success" activeClassName="active" style={{marginRight:'3px'}}>
+            <NavLink exact to="/portfolio" className="nav-button btn btn-outline-success text-success" activeClassName="active" >
               Portfolio
         </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/contact" className="nav-button btn btn-outline-info text-info" activeClassName="active" style={{marginRight:'3px'}}>
+            <NavLink exact to="/contact" className="nav-button btn btn-outline-info text-info" activeClassName="active" >
               Contact
         </NavLink>
           </li>

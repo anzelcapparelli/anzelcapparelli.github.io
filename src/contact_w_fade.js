@@ -4,6 +4,8 @@ import "../../transparent.css";
 
 /* ***********************************************************************************************************************
 May be a REALLY good example, for cool effect on project description contents coming in, or going out!
+CSS for the majority of the animation is located in <root>/index.css!
+
 *********************************************************************************************************************** */
 
 function Contact() {
