@@ -9,7 +9,7 @@ function About() {
 
     <div >
       {/* ^^^ add image to above div! */}
-      <div className="container p-3 my-5 text-light transparent">
+      <div className="container p-3 mt-5 text-light transparent">
         {/* above div is the background to the text! Bootstrap is overriding */}
         <div className="row justify-content-start">
           <div className="col-md-12 mt-5">
