@@ -29,17 +29,33 @@ img {
     position: relative;
 }
 
-/* .projectTitle{
-    position: absolute;
-} */
 .descriptionClose {
-    /* float: right; */
-    /* margin-bottom: 5px; */
+    margin-right: 1%;
+    color: #fff !important;
+    text-shadow: none !important;
+    font-weight: normal !important;
 }
 
 .projectDescription {
-    background-color: transparent;
+    /* background-color: transparent !important; */
+    /* inheriting background-color (confirmed: this is attribute to target
+from body; above line doesnt fix. Need to find way to give card 
+transparent without adding weird white strip to top of page */
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 7%;
+    left: 0%;
+    /* ===============================================================
+should really change coding so that it takes sane space as image: 
+this (top & left positioning from ancestor) is kindof a band-aid
+=============================================================== */
+}
+
+.descriptionTop {
+    margin: 0;
+    border: 1px solid gray;
+}
+
+.descriptionBG {
+    background-color: transparent
 }
