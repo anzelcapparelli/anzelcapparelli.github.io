@@ -45,9 +45,7 @@ function Project(props) {
             <card
                 className="text-light projectDescription"
                 show={show}
-                style={{ opacity: show ? 1 : 0 }}
-                onClick={show ? "" : { handleShow }}
-            // ^^^ onClick not currently working as intended
+                style={show ? {opacity: 1 } : { cursor: "default", opacity: 0 }}
             >
                 <hr className="descriptionTop"></hr>
                 <body className="text-light descriptionBG">
@@ -55,11 +53,13 @@ function Project(props) {
                         className="descriptionClose mb-2 mr-2"
                         variant="white"
                         onClick={handleClose}
-                        style={show ? { cursor: "pointer" } : {}}
+                        style={show ? {} : { cursor: "default" }}
                     />
                     <br />
                     <ul
-                    className="descriptionList"
+                        className="descriptionList"
+                        style={show ? {} : { cursor: "default"}}
+                        onClick={handleShow}
                     >
                         {props.desc.map(tidbit =>
                             <li key={uuidv4()}>{tidbit}</li>

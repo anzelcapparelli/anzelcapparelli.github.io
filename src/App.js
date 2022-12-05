@@ -14,23 +14,16 @@ function App() {
   const picLoc = "/assets/images/backgrounds/";
 
   const bckgrnd = {
-    // about: `${picLoc}angelTop.jpg`,
-    // portfolio: `${picLoc}rockHall.jpg`,
-    // contact: `${picLoc}pockmark.jpg`,
     // universal: `${picLoc}forest_n_creek.jpg`,
-    universal: `${picLoc}forest_n_creek.jpg`,
     universalLandscape: `${picLoc}mtn_view.jpg`,
     // ^^^ universalLandscape stock photo by JOHN TOWNER on Unsplash
 
   }
 
   /* ================================================================================================
-
   JOHN TOWNER on Unsplash Credit Links:
-
   https://unsplash.com/@heytowner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
   https://unsplash.com/images/nature/landscape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-  
   ================================================================================================ */
 
   return (
