@@ -35,55 +35,6 @@ code {
   margin-top: .5em;
 }
 
-.fullName{
-  display: none;
-}
-
-@keyframes fader {
-  from {opacity: 1; width:110px;}
-  to {opacity: 0; width: 0;}
-}
-
-@keyframes revealer {
-  from {opacity: 0; width:0;}
-  to {opacity: 1; width: 110px;}
-}
-
-.fade{
-display: inline-block;
-animation-name: fader;
-animation-duration: 2s;
-width:0
-}
-
-
-.parentFade{
-  border: 40px;
-}
-
-.parentFade:hover .fade{
-  opacity: 1;
-  width:95px;
-  transition: 2s;
-}
-
-.parentFade .fade{
-  transition: 2s;
-}
-
-.parentFade:hover .preferName{
-display: none;
-}
-
-.parentFade:hover .fullName{
-display: block;
-}
-
-.shifter::selection .fade{
-  opacity: 1;
-  width: 110px
-}
-
 .contactInfo{
   
   padding-bottom: 60px;

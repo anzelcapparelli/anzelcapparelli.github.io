@@ -1,11 +1,9 @@
 import React from "react";
+import "./style.css"
 
 function Footer() {
     return (
-        <footer
-            style={{ clear: "both", paddingTop: 30, paddingBottom: 30, textAlign: "center" }}
-            className="footer bg-dark"
-        >
+        <footer className="footer bg-dark">
 
             <div className="row justify-content-md-center text-center contactLinks">
             <span>
