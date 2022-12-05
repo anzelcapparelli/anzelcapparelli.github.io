@@ -7,9 +7,13 @@
   pointer-events: none;
 }
 
-.pageBackground{
+.pageBackground {
   background-attachment: fixed;
-  /* background-size: 'cover'; */
+  background-size: cover;
+  /* background-size: auto; */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  /* border: 50px solid red; */
   /* position: relative; */
 }
 

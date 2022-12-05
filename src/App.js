@@ -11,12 +11,27 @@ import './App.css';
 
 function App() {
 
+  const picLoc = "/assets/images/backgrounds/";
+
   const bckgrnd = {
-    // about: "/assets/images/backgrounds/angelTop.jpg",
-    // portfolio: "/assets/images/backgrounds/rockHall.jpg",
-    // contact: "/assets/images/backgrounds/pockmark.jpg",
-    universal: "/assets/images/backgrounds/forest_n_creek.jpg",
+    // about: `${picLoc}angelTop.jpg`,
+    // portfolio: `${picLoc}rockHall.jpg`,
+    // contact: `${picLoc}pockmark.jpg`,
+    // universal: `${picLoc}forest_n_creek.jpg`,
+    universal: `${picLoc}forest_n_creek.jpg`,
+    universalLandscape: `${picLoc}mtn_view.jpg`,
+    // ^^^ universalLandscape stock photo by JOHN TOWNER on Unsplash
+
   }
+
+  /* ================================================================================================
+
+  JOHN TOWNER on Unsplash Credit Links:
+
+  https://unsplash.com/@heytowner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  https://unsplash.com/images/nature/landscape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  
+  ================================================================================================ */
 
   return (
     <Router>
@@ -26,23 +41,32 @@ function App() {
         </Header>
         <div className="bg-white">
           <Route exact path={["/", "/about"]}>
-            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
-            <PageTitle name="About Me" />
-            <About className="pageContents"/>
+            <div
+              className="pageBackground"
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universalLandscape})` }}
+            >
+              <PageTitle name="About Me" />
+              <About className="pageContents" />
             </div>
 
           </Route>
           <Route exact path="/portfolio">
-            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
-            <PageTitle name="Portfolio Page" />
-            <Portfolio className="pageContents"/>
+            <div
+              className="pageBackground"
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universalLandscape})` }}
+            >
+              <PageTitle name="Portfolio Page" />
+              <Portfolio className="pageContents" />
             </div>
 
           </Route>
           <Route exact path="/contact">
-            <div className="pageBackground" style={{backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universal})`}}>
-            <PageTitle name="Contact Information" />
-            <Contact className="pageContents"/>
+            <div
+              className="pageBackground"
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + bckgrnd.universalLandscape})` }}
+            >
+              <PageTitle name="Contact Information" />
+              <Contact className="pageContents" />
             </div>
 
           </Route>
