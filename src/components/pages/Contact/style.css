@@ -7,3 +7,11 @@
 .wrapThis {
     overflow-wrap: break-word !important;
 }
+
+.hideThis {
+    overflow: hidden;
+}
+
+a{
+    overflow: hidden !important;
+}
