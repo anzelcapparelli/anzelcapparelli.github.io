@@ -42,9 +42,9 @@ function Project(props) {
             </div>
 
 
-            <card
+            <div
                 className="text-light projectDescription"
-                show={show}
+                show={show? "true" : "false"}
                 style={show ? {opacity: 1 } : { cursor: "default", opacity: 0 }}
             >
                 <hr className="descriptionTop"></hr>
@@ -66,7 +66,7 @@ function Project(props) {
                         )}
                     </ul>
                 </body>
-            </card>
+            </div>
 
         </div>
         // </div>
